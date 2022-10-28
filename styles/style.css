@@ -5,13 +5,13 @@
  * 
  */
 
- :root {
-   --grey-dark: #292b2c;
-   --grey-light: #e4e4e4;
-   --orange-dark: #c05326;
-   --orange-light: #f7eae4;
-   --white: #fff;
- }
+:root {
+  --grey-dark: #292b2c;
+  --grey-light: #e4e4e4;
+  --orange-dark: #c05326;
+  --orange-light: #f7eae4;
+  --white: #fff;
+}
 
 body {
   margin: 0;
@@ -24,7 +24,12 @@ button {
   font-size: 1rem;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -67,6 +72,9 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 1rem;
+  font-size: 1rem;
+  color: #f3f2f2;
 }
 
 .navigation__link {
@@ -75,7 +83,6 @@ p {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 
 /* Text styles */
 
@@ -92,17 +99,54 @@ p {
   border-left-color: var(--orange-dark);
 }
 
-
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+/* INSERT BUTTON STYLES HERE */
 
 /* Content */
 
 .content {
   display: flex;
   flex-direction: column;
+}
+/*button */
+.donate {
+  background-color: #c05326;
+  color: #e0e7eb;
+  border: 3px solid rgb(173, 38, 38);
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  margin-left: 15%;
+  bottom: 50px;
+  position: relative;
+}
+.donate:hover {
+  color: #353131;
+}
+.donate1 {
+  background-color: #c05326;
+  color: #e0e7eb;
+  border: 3px solid rgb(173, 38, 38);
+  border-radius: 6px;
+  transform: translate(-50%, -50%);
+  margin-left: 5px;
+}
+.donate1:hover {
+  color: #353131;
+}
+
+.volunteer {
+  background-color: #dfe1e2;
+  color: #f84f07;
+  border: 3px solid black;
+  border-radius: 6px;
+  position: relative;
+  margin-left: 3%;
+  bottom: 50px;
+  transform: translate(-50%, -50%);
+}
+.volunteer:hover {
+  color: #244c6b;
 }
 
 /* Alert */
@@ -121,19 +165,30 @@ p {
 
 .hero {
   background-image: url("header-bike.jpg");
-  background-color: var(--grey-light);
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  padding-bottom: 50%;
+  padding-left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: rgb(224, 219, 219);
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 2rem;
+  position: absolute;
+  left: 16rem;
+  transform: translate(-50%, -50%);
+  color: rgb(252, 252, 252);
+  padding-bottom: 30%;
 }
-
 
 /* Headings */
 
@@ -158,11 +213,11 @@ p {
   background: var(--orange-dark);
 }
 
-
 /* Article */
 
 .article {
   margin-bottom: 1rem;
+  border: 2px solid black;
 }
 
 .article__title {
